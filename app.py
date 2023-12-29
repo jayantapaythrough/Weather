@@ -1,7 +1,10 @@
 import streamlit as st
 from geopy.geocoders import Nominatim
 import requests
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
+key = os.getenv("key")
 
 # Function to get location coordinates
 def get_location_coordinates(location_name):
